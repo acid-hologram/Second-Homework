@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
         counterButton.setOnClickListener{counter.increment()
         }
 
-        nextActivityButton.setOnClickListener {
+        nextActivityButton.setOnClickListener  {
             val intent = Intent(MainActivity@this,SecondActivity::class.java)
             intent.putExtra("TAP_KEY",counter.currentCount)
             intent.putExtra("TAP_STATE",indicatorButton.isEnabled)
